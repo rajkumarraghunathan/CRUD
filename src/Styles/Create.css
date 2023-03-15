@@ -1,0 +1,33 @@
+.background {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.formColor {
+    border: 'none';
+    width: 50%;
+    border-radius: 0% !important;
+    /* style={{ boxShadow: "0 0.5rem 1rem 0 rgba(0, 0, 0, 2.0)" }} */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 2.0);
+}
+
+.image {
+    background-image: url("../image/wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.button {
+    width: 100%;
+}
+
+.cardColor {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 2.0);
+}
