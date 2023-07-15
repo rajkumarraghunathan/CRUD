@@ -21,7 +21,7 @@ const Read = () => {
     useEffect(() => {
         getAPI();
 
-    }, [])
+    }, [firstName])
 
     const onDelete = async (id) => {
         await axios.delete(`https://632fe3bf591935f3c886b34d.mockapi.io/fake/${id}`)
