@@ -85,7 +85,7 @@ const Read = () => {
                                 <td className="align-middle">{data.lastName}</td>
                                 <td className="align-middle"><Link to='/update' style={{ textDecoration: 'none' }}> <button type="button" onClick={() => editData(data)} className="btn btn-success">Edit</button></Link></td>
                                 <td className="align-middle"><button type="button" onClick={() => onDelete(data.id)} className="btn btn-danger">Delete</button></td>
-                                <td className="align-middle"><button type="button" onClick={() => onView(data)} className="btn btn-primary">View Detail</button></td>
+                                {/* <td className="align-middle"><button type="button" onClick={() => onView(data)} className="btn btn-primary">View Detail</button></td> */}
                             </tr>)
                     })}
                 </tbody>
