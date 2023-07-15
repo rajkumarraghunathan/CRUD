@@ -15,7 +15,7 @@ const Update = () => {
 
     const updateAPIData = async (event) => {
         event.preventDefault();
-        await axios.put(`https://632fe3bf591935f3c886b34d.mockapi.io/fakeData/${id}`, {
+        await axios.put(`https://632fe3bf591935f3c886b34d.mockapi.io/fake/${id}`, {
             firstName,
             lastName
         })
@@ -50,7 +50,7 @@ const Update = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button  type="submit" className="btn btn-primary mt-3 button" >Update</button>
+                            <button type="submit" className="btn btn-primary mt-3 button" >Update</button>
                         </form>
                     </div>
                 </div>

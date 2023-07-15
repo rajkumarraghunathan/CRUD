@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Read = () => {
     const navigate = useNavigate();
     const [APIData, setAPIData] = useState([]);
-    const [response,setResponse] =useState([]);
+    const [response, setResponse] = useState([]);
 
 
 
@@ -24,37 +24,37 @@ const Read = () => {
     }, [])
 
     const onDelete = async (id) => {
-        await axios.delete(`https://632fe3bf591935f3c886b34d.mockapi.io/fakeData/${id}`)
+        await axios.delete(`https://632fe3bf591935f3c886b34d.mockapi.io/fake/${id}`)
         getAPI();
     }
     const getAPI = async () => {
-        const response = await axios.get(`https://632fe3bf591935f3c886b34d.mockapi.io/fakeData`);
+        const response = await axios.get(`https://632fe3bf591935f3c886b34d.mockapi.io/fake`);
         setAPIData(response.data);
     }
-const onView =async(data) =>{
-    let { firstName, lastName, id } = data;
-    localStorage.setItem('ID', id);
-    localStorage.setItem('First Name', firstName);
-    localStorage.setItem('Last Name', lastName);
-   
-    await axios.get(`https://632fe3bf591935f3c886b34d.mockapi.io/fakeData/${id}`,{
-        firstName,
-        lastName,
-    }).then((res)=>{
-        // let {fn,ln,id} = res;
-        // console.log(fn);
-        // console.log(ln);
-       
-        setResponse(res); 
-        console.log(response);  
-        console.log(firstName);  
-        console.log(lastName);  
-        })
-   
- 
+    const onView = async (data) => {
+        let { firstName, lastName, id } = data;
+        localStorage.setItem('ID', id);
+        localStorage.setItem('First Name', firstName);
+        localStorage.setItem('Last Name', lastName);
 
-    navigate(`/detail${'/'}${id}`)
-}
+        await axios.get(`https://632fe3bf591935f3c886b34d.mockapi.io/fake/${id}`, {
+            firstName,
+            lastName,
+        }).then((res) => {
+            // let {fn,ln,id} = res;
+            // console.log(fn);
+            // console.log(ln);
+
+            setResponse(res);
+            console.log(response);
+            console.log(firstName);
+            console.log(lastName);
+        })
+
+
+
+        navigate(`/detail${'/'}${id}`)
+    }
 
 
     return (
