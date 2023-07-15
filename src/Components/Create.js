@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/Create.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,6 +9,10 @@ const Create = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [disableButton, setDisableButton] = useState(false)
+
+    useEffect(() => {
+
+    })
 
 
     const submitForm = (event) => {
