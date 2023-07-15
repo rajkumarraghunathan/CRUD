@@ -8,7 +8,7 @@ const Update = () => {
     const navigate = useNavigate();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [disableButton, setDisableButton] = useState(false);
+
 
     const [id, setID] = useState(null);
 
@@ -50,7 +50,7 @@ const Update = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button disabled={disableButton} type="submit" className="btn btn-primary mt-3 button" >Update</button>
+                            <button  type="submit" className="btn btn-primary mt-3 button" >Update</button>
                         </form>
                     </div>
                 </div>
