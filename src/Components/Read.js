@@ -72,7 +72,7 @@ const Read = () => {
                         <th scope="col">LastName</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
-                        <th scope="col">Details</th>
+                        {/* <th scope="col">Details</th> */}
 
                     </tr>
                 </thead>
